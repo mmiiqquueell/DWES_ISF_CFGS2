@@ -89,11 +89,14 @@
 	<?php 
 		
 		function crear_acronimo() {
-			$e06_acronimo = "Instituto educación secundaria Son Ferrer";
-			$e06_array = explode($e06_acronimo);
-			echo 
-			
-			
+			$e06_acronimo = "Instituto educación secundaria";
+			$e06_afegit = "Son Ferrer";
+			$e06_array = explode(" ", $e06_acronimo);
+			$e06_texto = "";
+			for ($i = 0; $i < count($e06_array); $i++) {
+				$e06_texto = $e06_texto . substr($e06_array[$i], 0, 1);
+			}
+		echo strtoupper($e06_texto) . " " . $e06_afegit;			
 			
 		}
 		crear_acronimo();		
