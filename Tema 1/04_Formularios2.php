@@ -1,4 +1,4 @@
-<!DOCTYPE HTML!>
+<!DOCTYPE HTML>
 <?php
 
 	$name = $_POST['name'];
